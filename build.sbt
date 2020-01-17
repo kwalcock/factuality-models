@@ -11,8 +11,8 @@ lazy val core = (project in file("."))
 // The resource is presumed to be too large for both GitHub and Maven, so it is copied
 // in from an external directory.  This needs to be configured before release.
 mappings in (Compile, packageBin) ++= Seq(
-  file("./resources/fact.rnn") -> "org/clulab/factuality/models/fact.rnn",
-  file("./resources/fact.x2i") -> "org/clulab/factuality/models/fact.x2i"
+  file("./resources/FTrainFDevScim3.rnn") -> "org/clulab/factuality/models/FTrainFDevScim3.rnn",
+  file("./resources/FTrainFDevScim3.x2i") -> "org/clulab/factuality/models/FTrainFDevScim3.x2i"
 )
 
 publishMavenStyle := true
